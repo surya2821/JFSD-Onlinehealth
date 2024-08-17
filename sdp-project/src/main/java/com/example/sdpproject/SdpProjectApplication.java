@@ -12,7 +12,7 @@ import com.twilio.type.PhoneNumber;
 public class SdpProjectApplication {
 	
 	static {
-	      Twilio.init("ACcfb77bed03cc6c6589a8265bc5e80749", "720024c4d94dc418e4db768e76790798");
+	      Twilio.init("", "");
 	   }
 
 	public static void main(String[] args) {
