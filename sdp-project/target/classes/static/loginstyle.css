@@ -1,0 +1,198 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Login container styles */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 500px; /* Increased container size */
+    padding: 40px; /* Increased padding */
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.login-container:hover {
+    transform: scale(1.02);
+}
+
+/* Login box styles */
+.login-box h1 {
+    font-size: 28px; /* Increased font size */
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input container styles */
+.input-container {
+    text-align: left;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-container label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 0.7;
+    transition: all 0.3s;
+    pointer-events: none;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: border-color 0.3s;
+}
+
+/* Move label up when input is focused */
+.input-container input:focus + label {
+    top: -12px;
+    font-size: 12px;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0 5px;
+    border-radius: 5px;
+}
+
+/* Remember Me styles */
+.remember-me {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.remember-me label {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Forgot Password styles */
+.forgot-password a {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Login button styles */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Signup link styles */
+.signup-link p {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #333;
+}
+
+.signup-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ... Previous styles ... */
+
+/* Input container styles */
+.input-container {
+    text-align: left;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    transform: translateX(0);
+    transition: transform 0.3s;
+}
+
+.input-container label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 0.7;
+    transition: all 0.3s;
+    pointer-events: none;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    outline: none;
+}
+
+/* Add animation for input focus */
+.input-container input:focus + label {
+    top: -12px;
+    font-size: 12px;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0 5px;
+    border-radius: 5px;
+}
+
+.input-container input:focus {
+    background-color: #fff;
+    transform: translateX(5px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition-delay: 0.1s;
+}
+
+/* Add animation for login button hover */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}

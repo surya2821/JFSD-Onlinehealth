@@ -1,0 +1,81 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+.form-group {
+    margin: 8px 0;
+    position: relative;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    padding-left: 30px; /* Create space for the label inside */
+}
+
+label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.2s ease all;
+    font-size: 16px;
+}
+
+input[type="text"]:focus + label,
+input[type="email"]:focus + label,
+input[type="password"]:focus + label,
+select:focus + label,
+input[type="text"]:not(:placeholder-shown) + label,
+input[type="email"]:not(:placeholder-shown) + label,
+input[type="password"]:not(:placeholder-shown) + label,
+select:not(:placeholder-shown) + label {
+    top: 5px;
+    font-size: 12px;
+    color: #007BFF;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

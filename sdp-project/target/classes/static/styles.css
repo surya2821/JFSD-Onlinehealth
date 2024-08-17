@@ -1,0 +1,342 @@
+/* Reset some default styles for the page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Apply styles to the main navbar at the top */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar li {
+    margin-right: 20px;
+    display: inline;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.main-navbar a:hover {
+    color: #FF5733;
+}
+
+/* Create space between the main navbar and mini navbar */
+.navbar-space {
+    height: 20px;
+}
+
+/* Apply styles to the secondary navbar below the main navbar */
+.mini-navbar {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 90%;
+    margin-left:40px;
+}
+
+.mini-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mini-navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.mini-navbar a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.mini-navbar a:hover {
+    color: #FF5733;
+}
+
+/* Apply styles to the hero section with the background image */
+.hero {
+    margin-top:30px;
+    background-color: rgb(0, 100, 38);
+    background-image: url(https://images.apollo247.in/images/ui_revamp_searchBanner1.svg),url(https://images.apollo247.in/images/ui_revamp_searchBanner2.svg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Style the call-to-action button */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF5733;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #FF814A;
+}
+
+.consultation-section {
+    background-color: #f0f0f0;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.health-conditions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.health-condition {
+    margin: 10px;
+    text-align: center;
+    flex-grow: 1;
+    max-width: 200px; /* Set a maximum width for each health condition */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    transition: transform 0.2s ease; /* Add a hover effect */
+}
+
+.health-condition img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0;
+}
+
+.health-condition p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.2em; /* Increase the font size for better readability */
+}
+
+/* Add hover effect to health conditions */
+.health-condition:hover {
+    transform: scale(1.05); /* Enlarge the card on hover */
+}
+
+/* ... (previous CSS styles) ... */
+
+/* Style the list of doctors */
+.doctors-section{
+    width: 90%;
+}
+.doctors-section h2{
+    justify-content: center;
+    margin-left: 40%;
+}
+.doctors-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.doctor {
+    flex: 0 0 100%; /* Each doctor takes up the full width of the row */
+    margin: 10px 0; /* Added margin to separate doctors vertically */
+    padding: 20px;
+    text-align: left;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.doctor:hover {
+    transform: scale(1.01);
+}
+
+.doctor img {
+    max-width: 150px; /* Adjust the image width as needed */
+    height: auto;
+    border-radius: 0;
+    margin-right: 20px;
+    float: left;
+}
+
+.doctor-info {
+    padding-left: 20px;
+    position: relative;
+}
+
+.doctor-info h3 {
+    font-size: 1.4em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.doctor-info p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.book-appointment-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #FF5733;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-button {
+	position: relative;
+    bottom: 10px;
+    margin-left:550px;
+    padding: 10px 20px;
+    background-color: #FF5733;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.book-appointment-button:hover {
+    background-color: #FF814A;
+}
+
+/* ... (previous CSS styles) ... */
+/* ... (previous CSS styles) ... */
+
+/* Style the footer section */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0; /* Reduced footer height */
+    font-size: 0.9em; /* Reduced font size */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info,
+.download-follow {
+    flex: 0 0 calc(50% - 10px); /* Each section takes up one-half of the available width with 10px spacing */
+    text-align: left;
+    padding: 10px;
+}
+
+.download-app h3,
+.follow-social h3 {
+    font-size: 1.2em; /* Reduced heading font size */
+    margin-bottom: 8px; /* Reduced margin */
+}
+
+.contact-info h3,
+.download-app h3,
+.follow-social h3 {
+    font-size: 1.2em; /* Reduced heading font size */
+    margin-bottom: 8px; /* Reduced margin */
+}
+
+.contact-info p,
+.download-app .app-icon,
+.follow-social .social-icon {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9em; /* Reduced font size */
+    display: inline-block; /* Display icons horizontally */
+    margin-right: 10px; /* Add space between icons */
+}
+
+.app-icon img,
+.social-icon img {
+    width: 30px; /* Adjusted icon size */
+    height: auto;
+    vertical-align: middle; /* Align icons vertically in the same line */
+}
+
+/* ... (previous CSS styles) ... */
+.login-box-container {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    z-index: 1000; /* Ensure it's above other content */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the login box */
+.login-box {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Style for the close button */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
